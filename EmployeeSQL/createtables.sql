@@ -26,9 +26,11 @@ create table Salary (
 create table DeptManger (
 	dept_no CHAR(4) REFERENCES Departments(dept_no),
 	emp_no INTEGER REFERENCES Employees(emp_no),
+	PRIMARY KEY (emp_no, dept_no)
 );
 
 create table DeptEmployee (
 	emp_no INTEGER REFERENCES Employees(emp_no),
 	dept_no CHAR(4) REFERENCES Departments(dept_no),
+	PRIMARY KEY (emp_no, dept_no)
 )
