@@ -1,0 +1,1 @@
+Alter table deptemployee add constraint duplicate_emp_no_to_dept_no2 unique(emp_no,dept_no)
